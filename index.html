@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>AAAI 2027 Workshop on Physics-Governed AI for Energy</title>
+  <meta content="AAAI 2027 Workshop on Physics-Governed AI for Energy: AI and ML for energy systems in which physics informs learning, constrains decisions, and shapes architectures." name="description">
+  <meta content="AAAI 2027, workshop, physics-governed AI, physics-informed machine learning, energy systems, power systems, safe reinforcement learning, scientific machine learning" name="keywords">
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Raleway:300,400,500,700,800" rel="stylesheet">
+
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <style>
+    .schedule-table {
+      width: 100%;
+      border-collapse: collapse;
+      background: #fff;
+      font-family: Arial, sans-serif;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      margin: 20px 0;
+    }
+    .schedule-table th,
+    .schedule-table td {
+      padding: 12px 15px;
+      border-bottom: 1px solid #ccc;
+      text-align: left;
+    }
+    .schedule-table th {
+      background-color: #f7f7f7;
+      font-weight: bold;
+    }
+    .schedule-table tbody tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+    .schedule-table tbody tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    @media (max-width: 768px) {
+      .schedule-table th,
+      .schedule-table td {
+        padding: 10px;
+      }
+    }
+
+    .person {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .person-photo {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      object-fit: cover;
+      display: block;
+      margin: 0 auto 15px auto;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+    }
+    .person-photo--speaker {
+      width: 200px;
+      height: 200px;
+    }
+    .person-name {
+      display: block;
+      font-size: 1.15em;
+      font-weight: 600;
+      color: #00356B;
+      white-space: nowrap;
+    }
+    .person-affiliation {
+      color: #666;
+      font-size: 0.95em;
+      margin: 4px 0 0 0;
+    }
+    @media (min-width: 992px) {
+      .person-affiliation {
+        white-space: nowrap;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header id="header" class="d-flex align-items-center ">
+    <div class="container-fluid container-xxl d-flex align-items-center">
+
+      <div id="logo" class="me-auto"></div>
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#topic">Topics</a></li>
+          <li><a class="nav-link scrollto" href="#cfp">Call for Papers</a></li>
+          <li><a class="nav-link scrollto" href="#speakers">Invited Speakers</a></li>
+          <li><a class="nav-link scrollto" href="#schedule">Schedule</a></li>
+          <li><a class="nav-link scrollto" href="#accepted-paper">Accepted Papers</a></li>
+          <li><a class="nav-link scrollto" href="#awards">Awards</a></li>
+          <li><a class="nav-link scrollto" href="#maps">Venue</a></li>
+          <li><a class="nav-link scrollto" href="#organizers">Organizers</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+
+    </div>
+  </header>
+
+  <section id="hero">
+    <div class="hero-container" data-aos="zoom-in" data-aos-delay="200">
+      <h1 class="mb-4 pb-0" style="text-transform: none;">
+        AAAI 2027 Workshop on <br>Physics-Governed AI for Energy
+      </h1>
+      <p style="font-size: 28px; color: rgba(255, 255, 255, 0.9); margin-top: 25px; font-weight: 300; letter-spacing: 0.5px;">
+        February 22/23, 2027<br>
+        Montreal, Canada
+      </p>
+    </div>
+  </section>
+
+  <main id="main">
+
+    <section id="about">
+      <div class="container position-relative" data-aos="fade-up">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2>About The Workshop</h2>
+            <p style="font-size: 18px;">Energy drives the modern world, but current social, economic, and climate conditions are forcing rapid change in legacy energy systems. Climate commitments are driving a fundamental transformation of these systems, while energy-intensive AI and data centers are simultaneously creating new sources of demand and innovation. While AI is reshaping the energy landscape, the energy value chain may ultimately constrain AI. This creates an open challenge: <i>how do we continue to deliver reliable energy as the modeling and operation of clean energy becomes increasingly complex, for the benefit of all?</i></p>
+            <p style="font-size: 18px;">AI and ML methods can integrate physical knowledge with data to develop more accurate models and control policies, yet their operational feasibility remains uncertain. Many approaches lack rigorous safety guarantees, their ability to generalize to rare and critical events is poorly understood, and the inference cost and latency of large models can exceed the strict requirements of operators during critical decisions.</p>
+            <p style="font-size: 18px;">This workshop provides a platform for research on <b>Physics-Governed AI for Energy</b>, in which physical laws and system structure not only <b>inform</b> learning but also <b>constrain</b> agents, i.e., determine which decisions are permissible, and <b>shape</b> the very design of learning systems, from information structure to inference budget. By moving beyond physics-informed learning toward physics-governed AI for energy, this workshop seeks foundations to generate algorithms that are accurate beyond simulation, computationally and operationally viable, and demonstrably safe to deploy in critical energy infrastructure, under a shared belief that physics informs, constrains, and shapes ML systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="topic" class="section-with-bg">
+      <br>
+      <br>
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Topics</h2>
+          <p>We seek novel AI and ML research for energy systems in which physics plays one or more of three roles: (1) <b>informing</b> learning through physical priors, architectures, or training objectives; (2) <b>constraining</b> predictions and decisions through physical and operational limits; and (3) <b>shaping</b> which AI architectures are viable given network topology, observability, controllability, latency, and system timescales. Topics include, but are not limited to:</p>
+        </div>
+        <section id="topics">
+          <div class="container">
+
+            <div class="row mb-4">
+              <div class="col-12">
+                <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+                  <b style="font-size: 18px; color: #343a40;">Applications Across the Energy Value Chain:</b>
+                  <p style="color: #6c757d; margin-top: 10px;">
+                    <ul>
+                      <li><b>Production:</b> renewable generation, hydrogen, gas.</li>
+                      <li><b>Delivery:</b> transmission, distribution, heat and gas networks.</li>
+                      <li><b>Consumption:</b> buildings, transportation, industrial loads, data centers.</li>
+                      <li><b>Storage:</b> batteries, thermal, etc.</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-12">
+                <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+                  <b style="font-size: 18px; color: #343a40;">Physics Informing Learning:</b>
+                  <p style="color: #6c757d; margin-top: 10px;">
+                    <ul>
+                      <li>Physics-informed and physics-constrained machine learning.</li>
+                      <li>Neural operators and surrogate models.</li>
+                      <li>Robustness to rare events.</li>
+                      <li>Uncertainty quantification.</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-12">
+                <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+                  <b style="font-size: 18px; color: #343a40;">Physics Constraining Decisions:</b>
+                  <p style="color: #6c757d; margin-top: 10px;">
+                    <ul>
+                      <li>Safe reinforcement learning.</li>
+                      <li>Verification and certification of learned models.</li>
+                      <li>Learning for optimization with feasibility guarantees.</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-12">
+                <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+                  <b style="font-size: 18px; color: #343a40;">Physics Shaping Architecture:</b>
+                  <p style="color: #6c757d; margin-top: 10px;">
+                    <ul>
+                      <li>Topology- and structure-aware models.</li>
+                      <li>Decentralized and multi-agent learning.</li>
+                      <li>Real-time inference.</li>
+                      <li>Learning across timescales.</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-12">
+                <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+                  <b style="font-size: 18px; color: #343a40;">Closing the Model&ndash;Reality Gap:</b>
+                  <p style="color: #6c757d; margin-top: 10px;">
+                    <ul>
+                      <li>Identifying when governing equations, parameterizations, or numerical solvers fail to reproduce physically observed behavior.</li>
+                      <li>Using data-driven learning to correct these errors.</li>
+                      <li>Verifying that the resulting models are both more accurate against measurements and consistent with physical laws and operational limits.</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="row mb-4">
+              <div class="col-12">
+                <div class="topic-panel interactive-panel p-4 border shadow-sm rounded" style="background: #ffffff;">
+                  <b style="font-size: 18px; color: #343a40;">Deployment and Community Infrastructure:</b>
+                  <p style="color: #6c757d; margin-top: 10px;">
+                    <ul>
+                      <li>Benchmarks and datasets.</li>
+                      <li>Digital twins and validation platforms.</li>
+                      <li>The energy footprint of AI systems.</li>
+                    </ul>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <br>
+      <br>
+    </section>
+
+    <section id="cfp">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Call For Papers</h2>
+        </div>
+        <h3>Key Dates</h3>
+        <ul>
+          <li><b>Submission Deadline</b>: TBA</li>
+          <li><b>Notification of Acceptance</b>: TBA</li>
+          <li><b>Workshop</b>: February 22/23, 2027</li>
+        </ul>
+        <br>
+        <h3>Submission Format</h3>
+        <p>
+          We solicit two types of papers:<br>
+          <b>Full papers</b> (7 pages) on foundational advances.<br>
+          <b>In-progress papers</b> (3&ndash;4 pages) on promising directions.<br><br>
+          Contributed work will anchor the program: every accepted paper will receive a poster presentation, selected papers will receive spotlights, and open-source contributions will receive demonstration slots. Awards will recognize outstanding research and impactful open tools, benchmarks, and platforms.
+        </p>
+        <h3>Submission Site</h3>
+        <p>
+          TBA
+        </p>
+      </div>
+    </section>
+
+    <section id="speakers">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Invited Speakers</h2>
+        </div>
+
+        <div class="row justify-content-center gx-3" style="max-width: 1000px; margin: 0 auto;">
+
+          <div class="col-lg-4 col-md-6 person" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/speakers/moura.jpg" alt="Scott Moura" class="person-photo person-photo--speaker">
+            <span class="person-name" style="font-size: 1.4em;">Scott Moura</span>
+            <p class="person-affiliation" style="font-size: 1.1em;">UC Berkeley</p>
+          </div>
+
+          <div class="col-lg-4 col-md-6 person" data-aos="fade-up" data-aos-delay="200">
+            <img src="assets/img/speakers/lara.jpg" alt="José Daniel Lara" class="person-photo person-photo--speaker">
+            <span class="person-name" style="font-size: 1.4em;">José Daniel Lara</span>
+            <p class="person-affiliation" style="font-size: 1.1em;">QXT Energy</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Schedule</h2>
+          <p>Tentative program (subject to change)</p>
+        </div>
+
+        <table class="schedule-table">
+          <thead>
+            <tr>
+              <th style="width: 25%;">Time</th>
+              <th>Event</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>08:30 – 08:40</td>
+              <td>Welcome and Overview</td>
+            </tr>
+            <tr>
+              <td>08:40 – 09:15</td>
+              <td>
+                Keynote 1<br>
+                <a data-bs-toggle="collapse" href="#abstract-keynote1" role="button" aria-expanded="false" aria-controls="abstract-keynote1" style="text-decoration: none; color: inherit; font-style: italic;">
+                  Title: TBA <i class="bi bi-chevron-down" style="font-size: 0.8em; margin-left: 5px;"></i>
+                </a>
+                <div class="collapse mt-2" id="abstract-keynote1">
+                  <div class="card card-body" style="font-size: 0.9rem; font-style: normal; color: #333;">
+                    <b>Abstract:</b> To be announced.
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>09:15 – 10:30</td>
+              <td><b style="color: red;">Contributed Session I</b></td>
+            </tr>
+            <tr>
+              <td>10:30 – 11:00</td>
+              <td>Best Paper Talk(s)</td>
+            </tr>
+            <tr>
+              <td>11:00 – 12:00</td>
+              <td><b style="color: blue;">Poster Session I</b></td>
+            </tr>
+            <tr>
+              <td>13:00 – 13:35</td>
+              <td>
+                Keynote 2<br>
+                <a data-bs-toggle="collapse" href="#abstract-keynote2" role="button" aria-expanded="false" aria-controls="abstract-keynote2" style="text-decoration: none; color: inherit; font-style: italic;">
+                  Title: TBA <i class="bi bi-chevron-down" style="font-size: 0.8em; margin-left: 5px;"></i>
+                </a>
+                <div class="collapse mt-2" id="abstract-keynote2">
+                  <div class="card card-body" style="font-size: 0.9rem; font-style: normal; color: #333;">
+                    <b>Abstract:</b> To be announced.
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>13:40 – 14:25</td>
+              <td><b>Panel Discussion: <i>From Simulation to Operation: What Must Physics Govern?</i></b><br>
+                A moderated discussion with the keynote speakers and another invited industry expert on the major hurdles for AI/ML adoption in energy systems.</td>
+            </tr>
+            <tr>
+              <td>14:35 – 15:50</td>
+              <td><b style="color: red;">Contributed Session II</b></td>
+            </tr>
+            <tr>
+              <td>15:50 – 16:00</td>
+              <td>Awards and Closing Remarks</td>
+            </tr>
+            <tr>
+              <td>16:00 – 17:00</td>
+              <td><b style="color: blue;">Poster Session II</b></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section id="accepted-paper" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Accepted Papers</h2>
+        </div>
+        <p style="text-align: center;">TBA</p>
+      </div>
+    </section>
+
+    <section id="awards" class="section-with-bg" style="margin-top: -60px; padding-top: 60px;">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Awards</h2>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-10">
+            <div style="background: #fff; padding: 30px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); margin-bottom: 20px;">
+              <p style="font-size: 1.05em; color: #444; margin-bottom: 0;"><i class="bi bi-trophy-fill" style="color: #FFD700; margin-right: 10px;"></i>Awards will recognize outstanding research and impactful open tools, benchmarks, and platforms. Awardees: TBA.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="maps" class="section-with-bg">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Venue</h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-12 mb-5" data-aos="fade-up" data-aos-delay="100">
+            <p class="text-center" style="font-size: 18px;">Montreal, Canada. Venue details: TBA.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="organizers">
+      <div class="container" data-aos="fade-up">
+        <div class="section-header">
+          <h2>Organizing Committee</h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-4 col-sm-6 person" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/organizers/schlegel.jpg" alt="Matthew K. Schlegel" class="person-photo">
+            <a class="person-name" href="https://mkschleg.github.io/">Matthew K. Schlegel</a>
+            <p class="person-affiliation">University of Calgary</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 person" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/organizers/chandra.jpg" alt="Abhishek Chandra" class="person-photo">
+            <a class="person-name" href="https://www.kth.se/profile/achan?l=en">Abhishek Chandra</a>
+            <p class="person-affiliation">KTH Royal Institute of Technology</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 person" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/organizers/ellinas.jpg" alt="Petros Ellinas" class="person-photo">
+            <a class="person-name" href="https://www.linkedin.com/in/petros-ellinas-b07830114/">Petros Ellinas</a>
+            <p class="person-affiliation">Technical University of Denmark</p>
+          </div>
+        </div>
+
+        <div class="section-header" style="margin-top: 40px;">
+          <h2>Steering Committee</h2>
+        </div>
+
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-4 col-sm-6 person" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/organizers/baker.jpg" alt="Kyri A. Baker" class="person-photo">
+            <a class="person-name" href="http://www.kyrib.com/">Kyri A. Baker</a>
+            <p class="person-affiliation">University of Colorado Boulder</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 person" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/organizers/donti.jpg" alt="Priya Donti" class="person-photo">
+            <a class="person-name" href="https://priyadonti.com/">Priya Donti</a>
+            <p class="person-affiliation">Massachusetts Institute of Technology</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 person" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/organizers/farrokhabadi.jpg" alt="Mostafa Farrokhabadi" class="person-photo">
+            <a class="person-name" href="https://mfarrokhabadi.github.io/">Mostafa Farrokhabadi</a>
+            <p class="person-affiliation">University of Calgary</p>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-3 col-md-4 col-sm-6 person" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/organizers/kapoor.jpg" alt="Taniya Kapoor" class="person-photo">
+            <a class="person-name" href="https://taniyakapoor.github.io/">Taniya Kapoor</a>
+            <p class="person-affiliation">Wageningen University &amp; Research</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 person" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/organizers/maddix.jpg" alt="Danielle Maddix Robinson" class="person-photo">
+            <a class="person-name" href="https://dcmaddix.github.io/">Danielle Maddix Robinson</a>
+            <p class="person-affiliation">Siemens</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 person" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/organizers/tartakovsky.jpg" alt="Daniel M. Tartakovsky" class="person-photo">
+            <a class="person-name" href="https://tartakovsky.stanford.edu/">Daniel M. Tartakovsky</a>
+            <p class="person-affiliation">Stanford University</p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-6 person" data-aos="fade-up" data-aos-delay="100">
+            <img src="assets/img/organizers/taylor.jpg" alt="Matthew E. Taylor" class="person-photo">
+            <a class="person-name" href="https://drmatttaylor.net">Matthew E. Taylor</a>
+            <p class="person-affiliation">University of Alberta</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <br>
+    <br>
+
+  </main>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        AAAI 2027 Workshop on Physics-Governed AI for Energy
+      </div>
+      <div class="credits">
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
