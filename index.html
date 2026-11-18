@@ -86,6 +86,21 @@
         white-space: nowrap;
       }
     }
+
+    .date-old {
+      color: #9195a2;
+      text-decoration: line-through;
+      margin-right: 6px;
+    }
+    .date-new {
+      font-weight: 600;
+      color: #14213d;
+    }
+    .date-note {
+      color: #c96a17;
+      font-weight: 500;
+      margin-left: 4px;
+    }
   </style>
 </head>
 
@@ -259,8 +274,8 @@
         </div>
         <h3>Key Dates</h3>
         <ul>
-          <li><b>Submission Deadline</b>: November 20, 2026</li>
-          <li><b>Notification of Acceptance</b>: December 2, 2026</li>
+          <li><b>Submission Deadline</b>: <del class="date-old">November 20, 2026</del> <span class="date-new">December 2, 2026</span> <span class="date-note">(extended deadline)</span></li>
+          <li><b>Notification of Acceptance</b>: <del class="date-old">December 2, 2026</del> <span class="date-new">December 10, 2026</span> <span class="date-note">(extended)</span></li>
           <li><b>Workshop</b>: February 22/23, 2027</li>
         </ul>
         <p>All deadlines are &ldquo;anywhere on earth&rdquo; (UTC-12).</p>
